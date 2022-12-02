@@ -10,9 +10,9 @@
             gorrion.Volar();
             Console.WriteLine($"El pájaro: {gorrion.Muere()}");
 
-            //Pajaro[] arrayPajaro = new Pajaro[10]; //Creamos array de pájaro
+            Pajaro[] arrayPajaro = new Pajaro[10]; //Creamos array de pájaro
             //Animal[] arrayPajaro = new Animal[10]; //Puede ser animal porque pájaro es un animal
-            IVolador[] arrayPajaro = new IVolador[10]; //Para solo dejar que vuele
+            //IVolador[] arrayPajaro = new IVolador[10]; //Para solo dejar que vuele
 
             for (int i = 0; i <= arrayPajaro.Length - 1; i++) //Meter pájaros en el array
             {
@@ -24,6 +24,8 @@
                 pajarito.Hablar();
                 Console.WriteLine(pajarito.Muere()); 
             }
+            gorrion.Saltar();
+
         }
     }
 }

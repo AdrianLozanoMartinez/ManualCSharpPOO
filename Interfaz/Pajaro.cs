@@ -1,6 +1,6 @@
 ﻿namespace Interfaz
 {
-    class Pajaro : Animal, ITerrestre, IVolador
+    class Pajaro : Animal, ITerrestreVolador
     {
         public override void Hablar()
         {
@@ -15,6 +15,11 @@
         public void Volar()
         {
             Console.WriteLine("Vuelo");
+        }
+
+        public void Saltar()
+        {
+            Console.WriteLine("Boiiinngg");
         }
 
         //No se pone aquí porque ya se ha heredado de Animal
