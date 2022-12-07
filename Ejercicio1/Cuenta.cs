@@ -30,12 +30,16 @@
         }
         public void Retirar(double cantidad)
         {
+            //Opción 1
             Cantidad -= cantidad;
 
             if (Cantidad < 0)
             {
                 Cantidad = 0;
             }
+
+            //Opción 2
+            //Cantidad = Math.Max(0, Cantidad - cantidad); //Es un if, coge el máximo entre 0 y la resta, si da positivo coge ese número, si da negativo coge 0
         }
     }
 }

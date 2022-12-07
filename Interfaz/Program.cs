@@ -1,4 +1,11 @@
-﻿namespace Interfaz
+﻿//Más interfaz en una clase
+//INombre->El nombre de la sinterfaz comienza con I y la siguiente letra mayúscula
+//Se puede meter varios comportamientos en una interfaz pero no lógica, cuando necesite lógica se usa la abstracta, ya que actúan igual
+//La interfaz se tiene que implementar al igual que la abstracta
+//Interfaz define un comportamiento, como métodos abstracto y luego hay que implementar(definir que hará)
+//Cuando lo hacen todos los animales se usa class abstracta, si lo hace algunos se usan interfaz
+//NO LLEVA VOID
+namespace Interfaz
 {
     class Program
     {

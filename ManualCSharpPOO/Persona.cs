@@ -1,4 +1,12 @@
-﻿namespace ManualCSharpPOO
+﻿/* Public se llama de donde sea, incluso otro proyecto, se puede desde program incluso main
+ * Protected -> Solo puede ser llamada de otra clase derivada o la propia,, pero desde program no se puede, ni main
+ * Private -> solo la clase puede llamar, no derivadam ni program ni main
+ * 
+ * Public -> TODOS
+ * Protected -> Clase propia y clases heredadas
+ * Private -> Clase propia
+ */
+namespace ManualCSharpPOO
 {
     class Persona
     {

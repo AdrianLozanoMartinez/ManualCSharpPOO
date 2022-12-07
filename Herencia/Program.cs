@@ -1,5 +1,6 @@
 ﻿//Hijo hereda todo del padre 
 //Si queremos heredar desde un nieto debe pasar primero por el padre y luego el abuelo, no puede del tirón ni heredar de más de uno
+//Se hereda una sola clase en una clase
 namespace Herencia
 {
     class Program

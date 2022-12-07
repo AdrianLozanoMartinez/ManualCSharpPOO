@@ -1,4 +1,5 @@
 ﻿//PADRE -> De él hereda los hijos (Mimo y Pirata)
+//Virtual en clases normales, las demás override
 namespace Herencia
 {
     class Persona

@@ -1,5 +1,6 @@
-﻿using System.Drawing;
-
+﻿//Abstracta mezcla entre una clase normal y una interfaz, pero solo se puede poner una hererada, las interfaces pueden ser más
+//Cuando lo hacen todos los animales se usa class abstracta, si lo hace algunos se usan interfaz
+//Override en los abstracto
 namespace Abstracto
 {
     class Program
@@ -18,14 +19,14 @@ namespace Abstracto
 
 
             Rectangulo rectangulo = new Rectangulo(10, 5);
-            Console.WriteLine($"Área del rectángulo: {circulo.GetArea()}");
-            Console.WriteLine($"Perímetro del rectángulo: {circulo.GetPerimetro()}");
+            Console.WriteLine($"Área del rectángulo: {rectangulo.GetArea()}");
+            Console.WriteLine($"Perímetro del rectángulo: {rectangulo.GetPerimetro()}");
             Console.WriteLine();
 
 
             Triangulo triangulo = new Triangulo(10, 5, 10, 20);
-            Console.WriteLine($"Área del triángulo: {cuadrado.GetArea()}");
-            Console.WriteLine($"Perímetro del triángulo: {cuadrado.GetPerimetro()}");
+            Console.WriteLine($"Área del triángulo: {triangulo.GetArea()}");
+            Console.WriteLine($"Perímetro del triángulo: {triangulo.GetPerimetro()}");
             Console.WriteLine();
 
         }

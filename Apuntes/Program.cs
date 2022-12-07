@@ -4,44 +4,44 @@
     {
         static void Main(string[] args)
         {
-            /*TODO
-             * Se hereda una sola clase en una clase, pero se puede tener más interfaz en una clase
-             
-             * INombre -> El nombre de la sinterfaz comienza con I y la siguiente letra mayúscula
-             
-             * Se puede meter varios comportamientos en una interfaz pero no lógica, cuando necesite lógica se usa la abstracta, ya que actúan igual
-             
-             * La interfaz se tiene que implementar al igual que la abstracta
-             
-             * Interfaz define un comportamiento y luego hay que implementar(definir que hará)
-             
-             * Abstracta mezcla entre una normal y una interfaz, solo se puede heredar una clase, interfaz las que sea
-             
-             * Cuando lo hacen todos los animales se usa class abstracta, si lo hace algunos se usan interfaz
-             
-             * 
-             * 
-             * 
-             * 05-12-2022
-             * Polimorfismo vale para todas las clases e interfaz
-             * en clase normal -> virtual y luego override o parecido
-             * en abstracto solo override o como sea en todo
-             * en interfaz es normal, no lleva void(pg67)
-             * 
-             * se pasa de una clase superior a hija con as para poder usar los metodos hijas, ya que se suele englobar en el padre y luwgo especificar
-             * 
-             * 
-             * 
-             * 
-             * 
-             * Public se llama de donde sea, incluso otro proyecto, se puede desde program incluso main
-             * Protected -> Solo puede ser llamada de otra clase derivada o la propia,, pero desde program no se puede, ni main
-             * Private -> solo la clase puede llamar, no derivadam ni program ni main
-             * 
-             * Public -> TODOS
-             * Protected -> Clase propia y clases heredadas
-             * Private -> Clase propia
-             * 
+            /*
+             *clase estatica como una abstracta
+             *estatica es para tener una clase siempre disponible como una caja que cogemos cuando lo necesitemos porque no se cierra hasta que se cierre el programa
+             *no se llama atributo sino variable estatica, 
+             *Se llama lo primero en el programa
+             *todo estatico, no puede tener nada que no lo sea
+             *debe llevar static... 
+             *no se pued ecrear instancia Persona persona = new Persona;
+             *no se puede heredar ni coger herencia
+             *En una clase NO ESTATICA puede llevar metodos, campos...estaticos
+             *se comporta igual que la constante al llamarse en el program
+             *MiClaseEstatica.MiMetodoEstatico(); -> Es igual que Console.WriteLine();
+             *Se puede llamar desde cualquier program, clases, al ser publica
+             *Igual que las clases pero sin usar el new de Persona persona = new Persona;
+             *Se carga memoria para ser compartido entre todos
+             *Se usa para utilidades, como generar dni, 
+             *libreria math es estaticos tambien
+             *Ideal hacer uno llamado utilidades, que quite el acento, la ñ, etc
+             *Clases se dividen en statica y no estatica (instancia)
+             *Utilidades de string, de int...
+             *
+             *
+             *GENERICAS
+             *T indica que trabaja con int porque esta indicado abajo, porque trabaja con cualquier tipo, el que especifiquemos
+             *T value -> valor por parametro del tipo indicado abajo <in>(10)
+             *Para utilizar misma clase para diferentes tipos, sirve para string, int, person aetc y ahorramos de vovler a escribir todo el códgio por cada tipo
+             *Se suele usar para colecciones
+             *<barajaEspañola> o <barajaFrancesa)
+             *generica -> baraja es igual, se reparte igual, se baraja igual...
+             *return Rendimiento > otro.Rendimiento -> Rendimiento coge la primera Persona persona = new Persona; y otro.Rendimiento coge el segundo Persona persona = new Persona; que se ponga
+             *se puede heredar 
+             *where string: object -> G:T -> string hereda de object y no al reves sino no compila -> Metodos genericos, se utiliza cuando no se sabe los tipos y para decir que uno hereda de otro
+             *object algo = 10 es un int que lo especifica con el 10
+             *
+             *NO ME QUEDA DEL TODO CLARO
+             *G:new -> G tiene un constructor
+             *G:T,new -> G Hereda de T y tiene instancia de T
+             *G:T,new() where T:new() -> G Hereda de T y tiene instancia de T, donde ...
              */
         }
     }

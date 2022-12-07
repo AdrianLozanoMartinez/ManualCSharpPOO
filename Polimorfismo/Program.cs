@@ -1,4 +1,6 @@
-﻿namespace Polimorfismo
+﻿//Vale para todas las clases e interfaz
+//se pasa de una clase superior a hija con as para poder usar los metodos hijas, ya que se suele englobar en el padre y luego especificar
+namespace Polimorfismo
 {
     class Program
     {
