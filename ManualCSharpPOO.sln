@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Default", "Default\Default.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xEjercicio2", "xEjercicio2\xEjercicio2.csproj", "{5DD44C76-AF95-486C-B80F-126F41BD8776}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Primeros_pasos", "Primeros_pasos\Primeros_pasos.csproj", "{ABA08473-8978-40DF-80C7-CEDDC8C70479}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resumen", "Primeros_pasos\Resumen.csproj", "{ABA08473-8978-40DF-80C7-CEDDC8C70479}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
