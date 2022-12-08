@@ -1,8 +1,8 @@
 ﻿namespace Apuntes
 {
-    internal class Program
+    class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             /*
              *clase estatica como una abstracta
