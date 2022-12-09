@@ -9,24 +9,29 @@
         static void Main()
         {
 /////////////////////////////////////////////////////////ENCAPSULACIÓN///////////////////////////////////////////////////
-    
+
             //Instancia
-            NombreClass nombreClass1 = new NombreClass();
-            Console.WriteLine($"Constructor por defecto: {nombreClass1.Nombre}"); //No aparece nombre porque en el constructor y la instancia está vacío 
+            Class nombreClass1 = new Class();
+            Console.WriteLine($"ENCAPSULACIÓN: Constructor por defecto de nombreClass1: {nombreClass1.Nombre}"); //No aparece nombre porque en el constructor y la instancia está vacío 
 
-            NombreClass nombreClass2 = new NombreClass("Adri");
-            Console.WriteLine($"Constructor con más parámetros: {nombreClass2.Nombre}\n");
+            Class nombreClass2 = new Class("Adri");
+            Console.WriteLine($"ENCAPSULACIÓN: Constructor con más parámetros de nombreClass2: {nombreClass2.Nombre}\n");
 
-            nombreClass1.NombreMetodo();
-            nombreClass2.NombreMetodo();
+            nombreClass1.NombreMetodoSINParametro();
+            nombreClass2.NombreMetodoSINParametro();
 
+            Console.WriteLine();
 
-/////////////////////////////////////////////////////////ABSTRACCIÓN///////////////////////////////////////////////////
-           
+            nombreClass1.NombreMetodoCONParametro("-> Un Parámetro");
+            nombreClass2.NombreMetodoCONParametro("-> Otro Parámetro");
 
+            Console.WriteLine();
 
+            nombreClass1.Nombre = "Andresita";
+            Console.WriteLine($"Cambiamos el nombre de nombreClass1: {nombreClass1.Nombre}");
 
-
+            nombreClass2.Nombre = "Adriana";
+            Console.WriteLine($"Cambiamos el nombre de nombreClass2: {nombreClass2.Nombre}");
         }
-    }
+    }  
 }

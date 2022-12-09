@@ -1,6 +1,6 @@
 ﻿namespace Abstracto
 {
-    class Circulo : Figura  //Figura abstracto
+    class Circulo : Figura  //Figura abstracta
     {
         private double radio;
 

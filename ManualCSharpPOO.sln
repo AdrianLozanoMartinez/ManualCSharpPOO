@@ -25,7 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Default", "Default\Default.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xEjercicio2", "xEjercicio2\xEjercicio2.csproj", "{5DD44C76-AF95-486C-B80F-126F41BD8776}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resumen", "Primeros_pasos\Resumen.csproj", "{ABA08473-8978-40DF-80C7-CEDDC8C70479}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resumen_Encapsulacion", "Primeros_pasos\Resumen_Encapsulacion.csproj", "{ABA08473-8978-40DF-80C7-CEDDC8C70479}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resumen_Abstracto", "Resumen_Abstracto\Resumen_Abstracto.csproj", "{9D70D3C7-D937-4307-957B-F09F2DCB13D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resumen_Herencia", "Resumen_Herencia\Resumen_Herencia.csproj", "{D45096E4-3626-4BDA-A31C-9D1F5153F3DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resumen_Interfaces", "Resumen_Interfaces\Resumen_Interfaces.csproj", "{BE9E8D20-2A98-447C-91A8-C6E77310CE21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +87,18 @@ Global
 		{ABA08473-8978-40DF-80C7-CEDDC8C70479}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABA08473-8978-40DF-80C7-CEDDC8C70479}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABA08473-8978-40DF-80C7-CEDDC8C70479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D70D3C7-D937-4307-957B-F09F2DCB13D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D70D3C7-D937-4307-957B-F09F2DCB13D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D70D3C7-D937-4307-957B-F09F2DCB13D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D70D3C7-D937-4307-957B-F09F2DCB13D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D45096E4-3626-4BDA-A31C-9D1F5153F3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45096E4-3626-4BDA-A31C-9D1F5153F3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D45096E4-3626-4BDA-A31C-9D1F5153F3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D45096E4-3626-4BDA-A31C-9D1F5153F3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE9E8D20-2A98-447C-91A8-C6E77310CE21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9E8D20-2A98-447C-91A8-C6E77310CE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9E8D20-2A98-447C-91A8-C6E77310CE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE9E8D20-2A98-447C-91A8-C6E77310CE21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

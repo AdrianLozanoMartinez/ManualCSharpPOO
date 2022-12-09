@@ -4,7 +4,7 @@
     //Define GENERALMENTE como son las personas...
 
  /////////////////////////////////////////////////////////ENCAPSULACIÓN///////////////////////////////////////////////////
-    class NombreClass //o public class NombreClass
+    class Class //o public class NombreClass
     {
         //Atributos
         private string _nombre; //Guarda datos
@@ -13,13 +13,13 @@
         public string Nombre { get => _nombre; set => _nombre = value; } //Manipula datos
 
         //Constructores
-        public NombreClass(string nombre) //Con más parámetros arriba
+        public Class(string nombre) //Con más parámetros arriba
         {
             //Propiedad = VariableConstructor
             Nombre = nombre;
         }
 
-        public NombreClass() : this("Andrés") //Por defecto, con menos parámetros abajo
+        public Class() : this("Andrés") //Por defecto, con menos parámetros abajo
         {                                     //Puede estar string.Empty o vacío o "relleno"
                              //this -> Cogemos el constructor de arriba más próximo
                                   //"Andrés" -> Mandamos al constructor de arriba la cadena "Andrés" o  string.Empty o vacío
@@ -28,17 +28,14 @@
             //Nombre = string.Empty; //Puede o no inicializar atributos, en este caso lo inicializamos a vacío, otra forma es "". En número es 0 y en boolean es false
         }
 
-        public void NombreMetodo()
+        public void NombreMetodoSINParametro()
         {
-            Console.WriteLine($"{Nombre} está en el Método");
+            Console.WriteLine($"{Nombre} está en el Método SIN parámetro");
         }
 
-
-/////////////////////////////////////////////////////////ABSTRACCIÓN///////////////////////////////////////////////////
-
-
-
-
-
+        public void NombreMetodoCONParametro(string texto) 
+        {
+            Console.WriteLine($"{Nombre} está en el Método CON parámetro {texto}");
+        }
     }
 }
