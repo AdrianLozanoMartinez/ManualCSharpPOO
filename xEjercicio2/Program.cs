@@ -31,27 +31,6 @@ namespace xEjercicio2
             persona3.Weight = weight;
             persona3.Height = height;
 
-
-            //Console.WriteLine($"{personKeyboard.ToString()}"); //NO SALE BIEN
-            /*int resultPersonKeyboard = persona1.CalcularIMC(weight, height);
-            Check(resultPersonKeyboard);
-            bool agePersonKeyboard = persona1.EsMayorDeEdad(age);
-            Console.WriteLine(agePersonKeyboard);
-            Console.WriteLine(persona1.ToString());
-            //personKeyboard.GenerarDNI();
-
-            int resultPersonAny = persona2.CalcularIMC(0,0);
-            Check(resultPersonAny);
-            bool agePersonAny = persona2.EsMayorDeEdad(age);
-            Console.WriteLine(agePersonAny);
-            Console.WriteLine(persona2.ToString());
-
-            int resultPersonDefault = persona3.CalcularIMC(0,0);
-            Check(resultPersonDefault);
-            bool agePersonDefault = persona3.EsMayorDeEdad(0);
-            Console.WriteLine(agePersonDefault);
-            Console.WriteLine(persona3.ToString());*/
-
             IndicarPeso(persona1);
             IndicarPeso(persona2);
             IndicarPeso(persona3);

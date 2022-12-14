@@ -8,7 +8,6 @@ namespace Polimorfismo
         {
             Animal[] animales = new Animal[] { new Gato(), new Perro() };
 
-
             foreach (Animal animal in animales)
             {
                 animal.Hablar();
@@ -16,7 +15,7 @@ namespace Polimorfismo
                if (animal is Perro)
                {
                     Perro perro = animal as Perro; //No provoca excepción y da nulo, pero está controlado con if
-                    //Perro perro = (Perro)animal; //Provoca excepción pero se contorla con if
+                    //Perro perro = (Perro)animal; //Provoca excepción pero se controla con if
                     perro.Buscar();
                }
 
