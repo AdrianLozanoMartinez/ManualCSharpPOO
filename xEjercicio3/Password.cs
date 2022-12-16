@@ -7,6 +7,9 @@
         private int _longitud;
         private string _contrasena;
 
+        //Constante
+        const int LONGITUD = 8;
+
         //Propiedades
         public int Longitud { get => _longitud; set => _longitud = value; } //Lo creamos CREO para poder meterlo por teclado por lo que nos pide en el ejercicio
         public string Contrasena { get => _contrasena; } 
@@ -16,7 +19,7 @@
         {
             GenerarPassword(longitud);  
         }
-        public Password() : this(8) { }
+        public Password() : this(LONGITUD) { }
 
         //Métodos
         public bool EsFuerte(string result)
