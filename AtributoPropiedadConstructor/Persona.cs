@@ -1,19 +1,18 @@
-﻿//Class (Clases) -> Declara datos y acciones
-namespace AtributoPropiedadConstructor
+﻿namespace AtributoPropiedadConstructor
 {
     //Enum sin especificar public/private debe ir fuera de la class Nombre{
     enum Sexos { Hombre, Mujer, NoEspecifica }; //Se pone fuera para usarlo en otra clase
-    class Persona
+    class Persona  //Declara datos y acciones
     {
         //Enum especificando public/private debe ir dentro de la class Nombre{
         public enum Sexos2 { Hombre, Mujer, NoEspecifica };
 
 
-        //Atributo -> No cambia al menos que cambiemos manualmente. this.atributo = nombreConstructor; o atributo = nombreConstructor;  en el constructor
+        //ATRIBUTOS -> Se CAMBIAN solamente en métodos, propiedades o constructores
 
         //Atributo
-        private Sexos sexo; //Del enumerado fuera de la class Nombre{
-        private Sexos2 sexo2; //Del enumerado dentro de la class Nombre{
+        private Sexos sexo; //Del enumerado FUERA de la class Nombre{
+        private Sexos2 sexo2; //Del enumerado DENTRO de la class Nombre{
         private string dni;
         private string name;
         private int age;
@@ -24,12 +23,6 @@ namespace AtributoPropiedadConstructor
         private string _dni;
         private string _name;
         private int _age;
-
-
-        ////////Los valores Solo se cambia en metodos, propiedades o constructor\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\º
-
-
-        //Propiedad -> Cambia al poner set. set => nombre = value. Luego Nombre = nombreConstructor en el constructor
 
         //Propiedad -> Acceder a los valores del atributo privados
         public Sexos Sexo { get => sexo; set => sexo = value; }
@@ -44,7 +37,8 @@ namespace AtributoPropiedadConstructor
                 age = value;
             }
         }
-        public bool IsAdult { get => age >= 18; }
+        public bool IsAdult { get => age >= 18; }  //Propiedad boolean del atributo age
+
 
         //Propiedad -> Acceder a los valores del atributo _privados
         public Sexos Sexo1 { get => _sexo; set => _sexo = value; }
@@ -63,34 +57,26 @@ namespace AtributoPropiedadConstructor
 
 
 
-        //CONSTRUCTORES -> Se pone los que MAS PARÁMETROS ARRIBA y los de MENOS ABAJO
-        //--> Si se va a llamar en otra clase se necesita la propiedad
-        //--> Si no se va a llamar en otra clase da igual si propiedad o atributo 
-        //Se usa THIS para llamar a otro constructor o atributo dentro de la clase
-
-        //Constructor -> Por defecto
-        public Persona()  //Modificando dni y nombre
-        {
-            dni = "-";
-            name = "Tu nombre";
-        }
+        //CONSTRUCTORES -> MAS PARÁMETROS ARRIBA y MENOS ABAJO
+        //Se usa PROPIEDAD -> Si se va a llamar en otra clase
+        //Se usa PROPIEDAD o ATRIBUTO -> Si no se va a llamar en otra clase
 
         //Constructor -> Por defecto con más parámetros 
-        public Persona(string dni, string name, int age, Sexos2 sexo) //Si no queremos declarar la edad u otro, podemos no inicializar aquí
+        public Persona(string dni, string name, int age, Sexos2 sexo) //Si no queremos declarar algo no inicializamos aquí
         {
-            //Atributos = Parámetros del constructor -> NO se aconseja
+            //NO ACONSEJABLE. Cogemos ATRIBUTOS = Parámetros del constructor. Se usa THIS para llamar a otro atributo dentro de la clase
             this.dni = dni;
             this.name = name;
             this.age = age;
             this.sexo2 = sexo;
 
-            //_Atributos = Parámetros del constructor -> NO se aconseja
+            //NO ACONSEJABLE. Cogemos ATRIBUTOS = Parámetros del constructor  
             _dni = dni;
             _name = name;
             _age = age;
             _sexo2 = sexo;
 
-            //Propiedades = Parámetros del constructor -> SI se aconseja
+            //SI SE ACONSEJA. Cogemos PROPIEDADES = Parámetros del constructor 
             Dni = dni;
             Name = name;
             Age = age;
@@ -99,8 +85,15 @@ namespace AtributoPropiedadConstructor
 
         //Constructor -> Por defecto con menos parámetros
         public Persona(string name, int age, Sexos2 sexo) : this("-", name, age, sexo)
-        {                                                //this -> Coge y envía al constructor por defecto, como dni - y la edad /=2
+        {                                                 //this -> Coge y envía al constructor por defecto, como dni - y la edad /=2
             Age /= 2;
+        }
+
+        //Constructor -> Por defecto
+        public Persona()  //Modificando dni y nombre
+        {
+            dni = "-";
+            name = "Tu nombre";
         }
     }
 }
