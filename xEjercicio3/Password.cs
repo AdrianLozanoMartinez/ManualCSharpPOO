@@ -3,92 +3,66 @@
 
     class Password
     {
-        //Atributos
-        private int _longitud;
-        private string _contrasena;
+        const int LENGTH = 8;
+        const string LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwyxz0123456789";
 
-        //Constante
-        const int LONGITUD = 8;
+        private int _length;
+        private string _password;
 
-        //Propiedades
-        public int Longitud { get => _longitud; set => _longitud = value; } //Lo creamos CREO para poder meterlo por teclado por lo que nos pide en el ejercicio
-        public string Contrasena { get => _contrasena; } 
-
-        //Constructores
-        public Password(int longitud) 
+        public int Length { get => _length; set => _length = value; }
+        public string Passwordd { get => _password; }
+        public Password(int length)
         {
-            GenerarPassword(longitud);  
+            Length = length;
+            _password = GenerarPassword();
         }
-        public Password() : this(LONGITUD) { }
-
-        //Métodos
-        public bool EsFuerte(string result)
+        public Password() : this(LENGTH)
         {
-            string caracteR = result.ToUpper();
-            string caracter = result.ToLower();
-            int contLEtter = 0;
-            int contLetter = 0;
-            int contNumber = 0;
-            bool send = false;
+        }
+        public bool EsFuerte()
+        {
+            bool esFuerte = false;
+            int mayus = 0;
+            int minus = 0;
+            int num = 0;
 
-      
-            for (int i = 0; i < result.Length; i++)
+            for (int i = 0; i < _password.Length; i++)
             {
-                if (Char.IsDigit(result[i]))
+                if (char.IsUpper(_password[i]))
                 {
-                    contNumber++;
+                    mayus++;
                 }
-                
-                else if (caracter[i] == result[i])
+                else if (char.IsLower(_password[i]))
                 {
-                    contLetter++;
+                    minus++;
                 }
-                else if (caracteR[i] == result[i])
+                else if (char.IsNumber(_password[i]))
                 {
-                    contLEtter++;
+                    num++;
                 }
             }
-
-                //Console.WriteLine(contNumber);
-                //Console.WriteLine(contLetter);
-                //Console.WriteLine(contLEtter);
-
-            if (contLEtter > 2 && contLetter > 1 && contNumber > 5)
+            if (mayus > 2 && minus > 1 && num > 5)
             {
-                send = true;
+                esFuerte = true;
             }
-            else
-            {
-                send = false;
-            }
-
-            return send;  
+            return esFuerte;
         }
 
-        public string GenerarPassword(int longitud)
+
+        public string GenerarPassword()
         {
+            string contrasena = "";
+
+            char[] caracteres = new char[_length];
             Random random = new Random();
-            //CREO QUE Se podría hacer con expresiones regulares/(char)'A' y con minúsculas -> Código ASCII, más números
-            string characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            char[] charCaracter = new char[longitud];
-            string[] resultString = new string[longitud];
-            string result = "";
 
-            for (int i = 0; i < charCaracter.Length; i++)
+            for (int i = 0; i < caracteres.Length; i++)
             {
-                charCaracter[i] = characters[random.Next(characters.Length)];
-                resultString[i] += charCaracter[i];
+                caracteres[i] = LETTERS[random.Next(LETTERS.Length)];
             }
 
-            foreach (string local in resultString)
-            {
-                result += local;
-            }
-            EsFuerte(result);
-
-            return result;  
+            contrasena = new string(caracteres);
+            return contrasena;
         }
-
-
     }
 }

@@ -9,10 +9,6 @@ namespace xEjercicio4
         static void Main()
         {
             string error = string.Empty;
-
-
-            //////////////////////////////////////////////////////////////MOSTRAR-DATOS/////////////////////////////////////////////////////////////
-
             double sumaLavadora = 0;
             double sumaTelevision = 0;
             double sumaElectrodomesticos = 0;
@@ -20,10 +16,13 @@ namespace xEjercicio4
 
             Electrodomestico[] consumo = new Electrodomestico[POSICION];
 
+            //////////////////////////////////////////////////////////////POR TECLADO/////////////////////////////////////////////////////////////
 
             /* for (int i = 0; i < consumo.Length; i++)
              {
- //////////////////////////////////////////////////////////////ELECTRODOMÉSTICOS/////////////////////////////////////////////////////////////
+
+ /////////ELECTRODOMÉSTICOS////////////
+
                  Console.WriteLine("Introduce letra");
                  try
                  {
@@ -56,7 +55,7 @@ namespace xEjercicio4
                  peso = double.Parse(Console.ReadLine());
 
 
-     //////////////////////////////////////////////////////////////TELEVISION/////////////////////////////////////////////////////////////
+ /////////TELEVISION////////////
 
                  //resolucion
                  Console.WriteLine("Introduce resolución (pulgadas)");
@@ -66,6 +65,8 @@ namespace xEjercicio4
                  Console.WriteLine("Introduce true/false si tiene TDT");
                  tdt = bool.Parse(Console.ReadLine());
              }*/
+
+//////////////////////////////////////////////////////////////MOSTRAR/////////////////////////////////////////////////////////////
 
             consumo = new Electrodomestico[POSICION] { 
 

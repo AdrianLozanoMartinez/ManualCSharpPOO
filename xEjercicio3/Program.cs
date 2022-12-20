@@ -9,22 +9,21 @@
 
         static void Ejecutable()
         {
-            Console.WriteLine("Introduzca la longitud de la contraseña");
-            int longitud = int.Parse(Console.ReadLine());
+            Console.WriteLine("Indica una cantidad de contraseñas: ");
+            int cant = int.Parse(Console.ReadLine());
+            Password[] passwords = new Password[cant];
 
-            Console.WriteLine("Introduzca la cantidad de contraseñas que quieres tener");
-            int cantidad = int.Parse(Console.ReadLine());
+            Console.WriteLine("Indicala longitud de las contraseñas: ");
+            int length = int.Parse(Console.ReadLine());
 
-            string[] array = new string[cantidad];
+            bool[] comoEs = new bool[passwords.Length];
 
-            Password password = new Password();
-
-            for (int i = 0; i < cantidad; i++)
+            for (int i = 0; i < passwords.Length; i++)
             {
-                string contrasena = password.GenerarPassword(longitud);
-                bool fuerte = password.EsFuerte(contrasena);
+                passwords[i] = new Password(length);
+                comoEs[i] = passwords[i].EsFuerte();
 
-                Console.WriteLine(contrasena + ' ' + fuerte);
+                Console.WriteLine($"{passwords[i].Passwordd} {comoEs[i]}");
             }
         }
     }
