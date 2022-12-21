@@ -53,8 +53,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestriccionTipos", "Restric
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Struct", "Struct\Struct.csproj", "{CE6755CA-03A6-4211-8816-F914A25E0715}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resumen_Atributos_Propiedad_Constructor", "T_Atributos_Propiedad_Constructor\Resumen_Atributos_Propiedad_Constructor.csproj", "{4D161755-EAC1-4B0D-A75E-7BDD1388C4A9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -161,10 +159,6 @@ Global
 		{CE6755CA-03A6-4211-8816-F914A25E0715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE6755CA-03A6-4211-8816-F914A25E0715}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE6755CA-03A6-4211-8816-F914A25E0715}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D161755-EAC1-4B0D-A75E-7BDD1388C4A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D161755-EAC1-4B0D-A75E-7BDD1388C4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D161755-EAC1-4B0D-A75E-7BDD1388C4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D161755-EAC1-4B0D-A75E-7BDD1388C4A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

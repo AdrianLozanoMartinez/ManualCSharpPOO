@@ -1,6 +1,6 @@
 ﻿namespace Interfaz
 {
-    internal interface ITerrestre
+    interface ITerrestre
     {
         public void Andar();
     }

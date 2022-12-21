@@ -4,6 +4,7 @@
     {
         static void Main()
         {
+            //INSTANCIAS
             Persona persona = new Persona(); //Constructor predeterminado, sino mandamos datos, nos coge lo que haya en el constructor por DEFECTO
 
                 Console.WriteLine(persona.Name);    //Tu nombre
