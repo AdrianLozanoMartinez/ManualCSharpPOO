@@ -13,7 +13,7 @@
             listaEmpleadosD.AddEmpleado(new Directivo());
             listaEmpleadosE.AddEmpleado(new Empleado());
 
-            listaEmpleadosX.AddEmpleado(new Directivo("",3));
+            listaEmpleadosX.AddEmpleado(new Directivo("","2"));
 
             string input = Console.ReadLine();
 

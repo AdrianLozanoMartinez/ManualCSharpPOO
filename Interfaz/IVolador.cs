@@ -1,6 +1,6 @@
 ﻿namespace Interfaz
 {
-    internal interface IVolador
+    interface IVolador
     {
         public void Volar();
     }

@@ -4,6 +4,6 @@
     {
         public Directivo() { }
 
-        public Directivo(string nombre, int id):base(nombre, id) { }
+        public Directivo(string nombre, string id):base(nombre, id) { }
     }
 }

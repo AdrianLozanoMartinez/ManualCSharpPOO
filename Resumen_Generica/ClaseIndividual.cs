@@ -1,4 +1,4 @@
-﻿namespace Resumen_Generica
+﻿namespace GenericaMASResumen
 {
     class ClaseIndividual<T> //Definimos T como cualquier tipo que en Program se declara como int u otro
     {

@@ -11,15 +11,15 @@
 
 ////////ABSTRACTO/CLASES/INTERFAZ -> Compara y trabaja con referencia de valores (debe ser misma clase no mismo valor). Herencia. Nulos.
              * Inicio de clases
-                 abstract class ClassAbstracta                                     -> Abstracta/Padre
-                 interface Inombre                                                 -> Interfaz/Padre
+                 abstract class ClassAbstracta                                     -> Abstracta/Padre   -> Puede meter lógica
+                 interface Inombre                                                 -> Interfaz/Padre    -> No puede meter lógica
                  class ClassHererada : ClassAbstracta/ClaseHerenciaPadre/Inombre   -> ClassAbstracta/Hija
              
              * Métodos
-                public abstract void nombre(){    -> Abstracta/Padre
-                public override void nombre(){    -> Override/Hija
+                public abstract/virtual void nombre(){    -> Abstracta/ClasePadre -> Solo define
+                public override void nombre(){    -> Override/Hija -> Desarrolla
              
-                public void nombre() -> Interfaz (No se define)/ClasePadre-ClaseHija(Se desarrolla la herencia y suyo)
+                public void nombre() -> Interfaz (No se define) <-> ClasePadre-ClaseHija(Se desarrolla la herencia y suyo)
              
              * Constructor
                 public nombreClase(string nombre) : base(nombre) //base llama al constructor padre cuando HEREDA. 
@@ -29,7 +29,7 @@
     
 
 ////////ESTÁTICAS 
-             * public static class ClaseEstatica -> Igual a clase normal pero no puede crear instancia -> Animal animales = new Animal();
+             * public static class ClaseEstatica -> Igual a clase normal, pero no puede crear instancia -> Animal animales = new Animal();
                                                         Creado para métodos que se usan en varios sitios
                                                         Se llama la primera antes que cualquier clase y permanece en memoria para ser usada como por ejemplo herramientas
                                                         Ni hereda ni puede ser hererada
@@ -39,7 +39,7 @@
              
              * Program:
                int variable = ClaseEstatica.variableClase;
-               variableClase.Metodo();
+               ClaseEstatica.Metodo();
 
 
 
@@ -52,14 +52,14 @@
 
              * Interfaz
                 interface Inombre<T>                     -> Inicio de la interfaz 
-                bool Metodo(T parametro);                -> Método
+                public bool Metodo(T parametro);                -> Método
 
                 class nombreClase : Inombre<nombreClase> -> Inicio de la clase hija, Hereda interfaz
                 public bool Metodo(nombreClase parametro)
                 
              * Método
                 static class nombreClase
-                public static bool Metodo>T, G>(T obj1, G obj2) where G : T
+                public static bool Metodo<T, G>(T obj1, G obj2) where G : T
              
 
              * Program
@@ -105,12 +105,11 @@
 
 
 
-
 ////////STRUCT -> Compara y trabaja con valores. No herencia.No nulos.
              * Struct
                 struct NombreStruct
-                public int X {get; set;}
-                public int Y {get; set;}
+                public int X { get; set; }
+                public int Y { get; set; }
 
              * Program
                 NombreStruct nombre = new NombreStruct { X = 10, Y = 20 };
@@ -118,7 +117,7 @@
 
 
             */
-        }//82
+        }
     }
 }
 

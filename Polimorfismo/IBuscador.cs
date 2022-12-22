@@ -1,6 +1,6 @@
 ﻿namespace Polimorfismo
 {
-    internal interface IBuscador
+    interface IBuscador
     {
         public void Buscar();
     }

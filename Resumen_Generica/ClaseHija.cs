@@ -1,6 +1,6 @@
-﻿namespace Resumen_Generica
+﻿namespace GenericaMASResumen
 {
-    class ClaseHija : InterfacePadre<ClaseHija> //Definimos T como cualquier tipo que en Program se declara como int u otro
+    class ClaseHija : InterfacePadre<ClaseHija> //Definimos ClaseHija como si fuera T, como cualquier tipo que en Program se declara como int u otro
     {
         public double NombrePropiedad { get; set; }
 

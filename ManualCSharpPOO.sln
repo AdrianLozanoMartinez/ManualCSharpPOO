@@ -41,9 +41,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resumen_Estatica", "Resumen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estatica", "Estatica\Estatica.csproj", "{E1D61838-5F65-40A8-AD05-BCFF43D22467}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generica", "Generica\Generica.csproj", "{CA8B90DD-E60A-4F3E-8DA9-5E969EB686A7}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resumen_Generica", "Resumen_Generica\Resumen_Generica.csproj", "{D177E7D0-2517-4AEA-A8AB-C99DDE15C32E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericaMASResumen", "Resumen_Generica\GenericaMASResumen.csproj", "{D177E7D0-2517-4AEA-A8AB-C99DDE15C32E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xEjercicio3", "xEjercicio3\xEjercicio3.csproj", "{9124B6B8-E69E-45A6-A8DD-3EE247219A7A}"
 EndProject
@@ -135,10 +133,6 @@ Global
 		{E1D61838-5F65-40A8-AD05-BCFF43D22467}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1D61838-5F65-40A8-AD05-BCFF43D22467}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1D61838-5F65-40A8-AD05-BCFF43D22467}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CA8B90DD-E60A-4F3E-8DA9-5E969EB686A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA8B90DD-E60A-4F3E-8DA9-5E969EB686A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA8B90DD-E60A-4F3E-8DA9-5E969EB686A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA8B90DD-E60A-4F3E-8DA9-5E969EB686A7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D177E7D0-2517-4AEA-A8AB-C99DDE15C32E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D177E7D0-2517-4AEA-A8AB-C99DDE15C32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D177E7D0-2517-4AEA-A8AB-C99DDE15C32E}.Release|Any CPU.ActiveCfg = Release|Any CPU

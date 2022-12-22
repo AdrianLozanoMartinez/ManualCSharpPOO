@@ -15,7 +15,7 @@ namespace Herencia
             pirata.Hablar("Hola");
 
             Mimo mimo = new Mimo("Paco");
-            mimo.Hablar("No habla porque es un mimo");  ////Sobreescribir es que cambia el método del padre en el hijo, eje: persona come con tenedor y pirata con las manos. 
+            mimo.Hablar("No habla porque es un mimo");  //Sobreescribir es que cambia el método del padre en el hijo, eje: persona come con tenedor y pirata con las manos. 
         }
     }
 }

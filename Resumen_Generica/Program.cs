@@ -1,9 +1,9 @@
-﻿namespace Resumen_Generica
+﻿namespace GenericaMASResumen
 {
     class Program
     {
         /*
-         * Utiliza misma clase para diferentes tipos (string, int, persona, etc) y ahorramos de volver a escribir todo el código por cada tipo
+            * Utiliza misma clase para diferentes tipos (string, int, persona, etc) y ahorramos de volver a escribir todo el código por cada tipo
             *T indica que trabaja con int porque esta indicado abajo, porque trabaja con cualquier tipo, el que especifiquemos
             *T value -> valor por parametro del tipo indicado abajo <in>(10)
              

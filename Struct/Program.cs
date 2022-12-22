@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            //class -> Para guardar datos.Se copia referencia de donde está la información, si modifica de dodne hereda se trabaja con trabajo cambiado.
-            //struct -> Para trabajar datos.Se copia el dato directamente, si modifica de dnde hereda no modifica el dato que se va a trabajar.
+            //class -> Para guardar datos.Se copia referencia de donde está la información, si modifica de donde hereda se trabaja con trabajo cambiado.
+            //struct -> Para trabajar datos.Se copia el dato directamente, si modifica de donde hereda no modifica el dato que se va a trabajar.
 
             //Empleado e = new Empleado { Nombre = "a", Id = 9 };
 
@@ -13,17 +13,6 @@
             /*Empleado e2 = new Empleado();
             e2.Nombre = "a";
             e2.Id = 9;*/
-
-            //p2 = p1 --> Hacer prueba con clase en lugar de struct y un strcu de la transparencia.
-            //Hacerlo entre medio de la diapositiva de struct
-
-            //En clase en la transparencia sigue valiendo igual todo cuando se modifica en struct p1 seria lo anterior y el p2 lo nuevo
-            //No puede heredar los struct
-
-            //cLASE -> cadena de texto y struct -> numeros no complejos
-
-            //pg84 -> struct compara datos por eso es true y clase direcciond e memoria por eso es false
-            //poner entre medio cp1 = cp2 o cp2 = cp1 daria true en las clases
 
             StructPoint sp1 = new StructPoint { X = 10, Y = 20 };
             StructPoint sp2 = new StructPoint { X = 10, Y = 20 };
