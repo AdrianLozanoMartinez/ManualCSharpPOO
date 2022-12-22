@@ -9,7 +9,7 @@
 
 
 
-////////ABSTRACTO/CLASES/INTERFAZ
+////////ABSTRACTO/CLASES/INTERFAZ -> Compara y trabaja con referencia de valores (debe ser misma clase no mismo valor). Herencia. Nulos.
              * Inicio de clases
                  abstract class ClassAbstracta                                     -> Abstracta/Padre
                  interface Inombre                                                 -> Interfaz/Padre
@@ -101,7 +101,52 @@
 
 ////////SOBREESCRIBIR MÉTODOS DE OBJECTOS 
              * public virtual string ToString()
+
+
+
+
+
+////////STRUCT -> Compara y trabaja con valores. No herencia.No nulos.
+             * Struct
+                struct NombreStruct
+                public int X {get; set;}
+                public int Y {get; set;}
+
+             * Program
+                NombreStruct nombre = new NombreStruct { X = 10, Y = 20 };
+                p1.X = 30;
+
+
             */
-        }//78
+        }//82
     }
 }
+
+
+
+//base se usa para llamar al padre, cuando aparece en azul claro es cuando no es necesario, se usa cuando hay discrepancia de donde coge el metodo u otro, sino hay duda se puede omitir. Se usa para sobreescribir un metodo para que no haya discrepancia entre los dos metodos, el de dentro y el que engloba
+
+/*
+ DIAGRAMA pg 92
+ 
+ private string dni;
+ private string nombre;
+ private int edad;
+ 
+ public void Hablar (string texto){}
+ public void Trabajar (){}
+ public bool EstaVivo (){ return false; }
+ public bool EsHijo (Persona padre, Persona madre){ return false; }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ */

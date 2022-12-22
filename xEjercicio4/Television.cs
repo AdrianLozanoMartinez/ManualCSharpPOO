@@ -30,9 +30,11 @@
         {
             double precio = 0;
 
+            //CUIDADO, EN EL ORDEN DE DIVIDIR O MULTIPLICAR HAY QUE VER SI VA PRIMERO UNA COSA U OTRA
             if (_resolucion > 40)
             {
                 precioEntrado += (precioEntrado*30)/100;
+                /*Es igual que si ponemos 1.3 que sale de (100+30)/100 = 130/100 = 13 -> (100 -> Es del 100%+30)*/
             }
             if (_tdt == true)
             {

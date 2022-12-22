@@ -7,39 +7,41 @@ namespace xEjercicio4
     {
         //Enumerados
         /*public enum CoonsumoEnergetico { A = 100, B = 80, C = 60, D = 50, E = 30, F = 10 }
-        public enum Coolor { blanco, negro, rojo, azul, gris }*/
-
-        //Atributos
-        private double _precioBase;
-        private double _peso;
-        private string _color;
-        private char _consumoEnergetico;
-        //private Coolor _color;
-        //private CoonsumoEnergetico _consumoEnergetico;
+        public enum Colores { blanco, negro, rojo, azul, gris }*/
 
         //Constantes
         public const double PRECIOBASE = 100;//€
         public static readonly string COLOR = "blanco"; // blanco, negro, rojo, azul y gris
         public static readonly char CONSUMOENERGETICO = 'F'; // blanco, negro, rojo, azul y gris
         public const double PESO = 5;//kg
-        //public const Coolor COLOR = Coolor.blanco; // blanco, negro, rojo, azul y gris
+        //public const Colores COLOR = Colores.blanco; // blanco, negro, rojo, azul y gris
         //public const CoonsumoEnergetico CONSUMOENERGETICO = CoonsumoEnergetico.F;
+
+        //Atributos
+        private double _precioBase;
+        private double _peso;
+        private string _color;
+        private char _consumoEnergetico;
+        //private Colores _color;
+        //private CoonsumoEnergetico _consumoEnergetico;
+
 
         //Propiedades
         public double PrecioBase { get => _precioBase; }
         public string Color { get => _color; }
         public char ConsumoEnergetico { get => _consumoEnergetico; }
         public double Peso { get => _peso; }
-        //public Coolor Color { get => _color; }
+        //public Colores Color { get => _color; }
         //public CoonsumoEnergetico ConsumoEnergetico { get => _consumoEnergetico; }
 
         //Constructores
-        //public Electrodomestico(double precioBase, Coolor color, CoonsumoEnergetico consumoEnergetico, double peso) 
+        //public Electrodomestico(double precioBase, Colores color, CoonsumoEnergetico consumoEnergetico, double peso) 
         public Electrodomestico(double precioBase, string color, char consumoEnergetico, double peso) 
         {
             _precioBase = PrecioFinal(precioBase, peso);
             _color = ComprobarColor(color);
-            _consumoEnergetico = ComprobarConsumoEnergetico(consumoEnergetico);
+            //_consumoEnergetico = ComprobarConsumoEnergetico(consumoEnergetico); //Se usa cuando te dicen que devuelva algo y haga algo con lo que devuelva en el constructor
+            ComprobarConsumoEnergetico(consumoEnergetico); //Por el profe, porque no devuelve nada el método. Mete en el atributo en el método y no en el constructor, no es necesario
             _peso = peso;
         }
         public Electrodomestico(double precioBase, double peso) : this(precioBase, COLOR, CONSUMOENERGETICO, peso) { } //color y consumoEnergetico lo ponemos de la constante
@@ -82,15 +84,15 @@ namespace xEjercicio4
             return Char.ToUpper(letra);
         }
 
-        //private Coolor ComprobarColor(Coolor colorEntrado)
+        //private Colores ComprobarColor(Colores colorEntrado)
         private string ComprobarColor(string colorEntrado)
         {
-            /*if (colorEntrado != Coolor.azul || colorEntrado != Coolor.blanco || colorEntrado != Coolor.rojo || colorEntrado != Coolor.negro || colorEntrado != Coolor.gris)
+            /*if (colorEntrado != Colores.azul || colorEntrado != Colores.blanco || colorEntrado != Colores.rojo || colorEntrado != Colores.negro || colorEntrado != Colores.gris)
             {
                 colorEntrado = COLOR;
             }*/
 
-        string[] CoLor = { "blanco", "negro", "rojo", "azul", "gris" };
+            string[] CoLor = { "blanco", "negro", "rojo", "azul", "gris" };
  
         bool encontrado = false;
 
@@ -116,7 +118,7 @@ namespace xEjercicio4
             return colorEntrado;
         }
 
-        public virtual double PrecioFinal(double precioEntrado, double pesoEntrado)
+        public virtual double PrecioFinal(double precioEntrado, double pesoEntrado) //Virtual no puede ser privado
         {
             double precio = 0;
             double peso = 0;
