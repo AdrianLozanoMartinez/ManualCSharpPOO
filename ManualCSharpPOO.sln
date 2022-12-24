@@ -19,8 +19,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaz", "Interfaz\Interf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polimorfismo", "Polimorfismo\Polimorfismo.csproj", "{15117843-FFE9-4707-96D6-6C87EFA04695}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xEjercicio1", "Ejercicio1\xEjercicio1.csproj", "{AB3090E7-0A73-4650-88B1-A894F4A14832}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Default", "Default\Default.csproj", "{522DFFD9-A3C4-40FF-809A-E10DA646850C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xEjercicio2", "xEjercicio2\xEjercicio2.csproj", "{5DD44C76-AF95-486C-B80F-126F41BD8776}"
@@ -89,10 +87,6 @@ Global
 		{15117843-FFE9-4707-96D6-6C87EFA04695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15117843-FFE9-4707-96D6-6C87EFA04695}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15117843-FFE9-4707-96D6-6C87EFA04695}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB3090E7-0A73-4650-88B1-A894F4A14832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB3090E7-0A73-4650-88B1-A894F4A14832}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB3090E7-0A73-4650-88B1-A894F4A14832}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB3090E7-0A73-4650-88B1-A894F4A14832}.Release|Any CPU.Build.0 = Release|Any CPU
 		{522DFFD9-A3C4-40FF-809A-E10DA646850C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{522DFFD9-A3C4-40FF-809A-E10DA646850C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{522DFFD9-A3C4-40FF-809A-E10DA646850C}.Release|Any CPU.ActiveCfg = Release|Any CPU
