@@ -21,8 +21,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polimorfismo", "Polimorfism
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Default", "Default\Default.csproj", "{522DFFD9-A3C4-40FF-809A-E10DA646850C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xEjercicio2", "xEjercicio2\xEjercicio2.csproj", "{5DD44C76-AF95-486C-B80F-126F41BD8776}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resumen_Encapsulacion", "Primeros_pasos\Resumen_Encapsulacion.csproj", "{ABA08473-8978-40DF-80C7-CEDDC8C70479}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resumen_Abstracto", "Resumen_Abstracto\Resumen_Abstracto.csproj", "{9D70D3C7-D937-4307-957B-F09F2DCB13D6}"
@@ -91,10 +89,6 @@ Global
 		{522DFFD9-A3C4-40FF-809A-E10DA646850C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{522DFFD9-A3C4-40FF-809A-E10DA646850C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{522DFFD9-A3C4-40FF-809A-E10DA646850C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5DD44C76-AF95-486C-B80F-126F41BD8776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DD44C76-AF95-486C-B80F-126F41BD8776}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DD44C76-AF95-486C-B80F-126F41BD8776}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DD44C76-AF95-486C-B80F-126F41BD8776}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ABA08473-8978-40DF-80C7-CEDDC8C70479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ABA08473-8978-40DF-80C7-CEDDC8C70479}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABA08473-8978-40DF-80C7-CEDDC8C70479}.Release|Any CPU.ActiveCfg = Release|Any CPU
