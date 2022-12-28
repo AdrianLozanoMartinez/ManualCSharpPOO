@@ -39,8 +39,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estatica", "Estatica\Estati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericaMASResumen", "Resumen_Generica\GenericaMASResumen.csproj", "{D177E7D0-2517-4AEA-A8AB-C99DDE15C32E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xEjercicio4", "xEjercicio4\xEjercicio4.csproj", "{A1410F59-EA69-4FE2-BC73-88D6173B75F1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestriccionTipos", "RestriccionTipos\RestriccionTipos.csproj", "{7AD233CA-B3BF-4704-AD92-11AF8C59DC3C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Struct", "Struct\Struct.csproj", "{CE6755CA-03A6-4211-8816-F914A25E0715}"
@@ -123,10 +121,6 @@ Global
 		{D177E7D0-2517-4AEA-A8AB-C99DDE15C32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D177E7D0-2517-4AEA-A8AB-C99DDE15C32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D177E7D0-2517-4AEA-A8AB-C99DDE15C32E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A1410F59-EA69-4FE2-BC73-88D6173B75F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1410F59-EA69-4FE2-BC73-88D6173B75F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1410F59-EA69-4FE2-BC73-88D6173B75F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1410F59-EA69-4FE2-BC73-88D6173B75F1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7AD233CA-B3BF-4704-AD92-11AF8C59DC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7AD233CA-B3BF-4704-AD92-11AF8C59DC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AD233CA-B3BF-4704-AD92-11AF8C59DC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
