@@ -1,6 +1,7 @@
 ﻿//Abstracta mezcla entre una clase normal y una interfaz, pero solo se puede poner una hererada, las interfaces pueden ser más
 //Cuando lo hacen todos los animales se usa class abstracta, si lo hace algunos se usan interfaz
 //Override en los abstracto
+//NO SE PUEDE CREAR INSTANCIA DE UNA ABSTRACTA, SE DEBE COGER DE LAS HIJAS
 namespace Abstracto
 {
     class Program
